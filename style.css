@@ -1,0 +1,183 @@
+/* ── oh-camel! ── */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+/* Slipshow built-in block colors */
+:root {
+  --thm-title-color: #fff;
+  --thm-title-bg-color: #ef4444;
+  --thm-bg-color: #fef2f2;
+  --thm-bold-color: #dc2626;
+
+  --def-title-color: #fff;
+  --def-title-bg-color: #f97316;
+  --def-bg-color: #fff7ed;
+  --def-bold-color: #ea580c;
+
+  --ex-title-color: #fff;
+  --ex-title-bg-color: #10b981;
+  --ex-bg-color: #ecfdf5;
+  --ex-bold-color: #059669;
+}
+
+body {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  color: #1e293b;
+  background: linear-gradient(175deg, #fffbeb 0%, #fef3c7 30%, #fff7ed 60%, #fff1f2 100%);
+  letter-spacing: -0.01em;
+}
+
+/* Headings with gradient text */
+h1 {
+  background: linear-gradient(135deg, #f97316, #ef4444, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(to right, #f97316, #ef4444, #ec4899) 1;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  color: #7c3aed;
+  margin-top: 24px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+/* Code blocks with a soft dark theme */
+pre {
+  background: linear-gradient(135deg, #1e1b4b, #1e293b) !important;
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 14px 0;
+  box-shadow:
+    0 4px 6px -1px rgba(0,0,0,0.1),
+    0 10px 15px -3px rgba(0,0,0,0.1),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  border: 1px solid rgba(139, 92, 246, 0.15);
+}
+
+pre code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.78em;
+  line-height: 1.55;
+}
+
+/* Inline code */
+code {
+  font-family: 'JetBrains Mono', monospace;
+  background: linear-gradient(135deg, rgba(249,115,22,0.1), rgba(236,72,153,0.08));
+  color: #be185d;
+  padding: 2px 7px;
+  border-radius: 5px;
+  font-size: 0.86em;
+  font-weight: 500;
+}
+
+pre code {
+  background: none;
+  color: inherit;
+  padding: 0;
+  font-weight: 400;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+  font-size: 0.9em;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0,0.07);
+}
+
+th {
+  background: linear-gradient(135deg, #7c3aed, #a855f7);
+  color: white;
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 8px 14px;
+  border-bottom: 1px solid #f3e8ff;
+}
+
+tr:nth-child(even) {
+  background: rgba(139, 92, 246, 0.04);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #f97316;
+  margin: 12px 0;
+  padding: 8px 16px;
+  background: rgba(249, 115, 22, 0.04);
+  border-radius: 0 8px 8px 0;
+}
+
+blockquote p {
+  margin: 4px 0;
+}
+
+/* Bold and emphasis */
+strong {
+  color: #dc2626;
+}
+
+em {
+  color: #7c3aed;
+  font-style: italic;
+}
+
+/* Links */
+a {
+  color: #ea580c;
+  text-decoration: none;
+  font-weight: 500;
+  background: linear-gradient(to right, #f97316, #ec4899);
+  background-size: 0% 2px;
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s ease;
+  padding-bottom: 1px;
+}
+
+a:hover {
+  background-size: 100% 2px;
+}
+
+/* Lists */
+ul, ol {
+  margin: 8px 0;
+  padding-left: 24px;
+}
+
+li {
+  margin: 5px 0;
+  line-height: 1.6;
+}
+
+/* Rainbow hr */
+hr {
+  border: none;
+  height: 3px;
+  background: linear-gradient(to right, #f97316, #ef4444, #ec4899, #8b5cf6, #3b82f6, #10b981);
+  margin: 30px 0;
+  border-radius: 2px;
+}
+
+/* Math */
+.katex {
+  font-size: 1.05em;
+}
