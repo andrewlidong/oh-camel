@@ -1,0 +1,138 @@
+/* Code block styling */
+pre code {
+  font-size: 0.85em;
+  line-height: 1.4;
+}
+
+pre {
+  padding: 16px;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+/* Definition box */
+.definition {
+  border-left: 4px solid #e67e22;
+  background: rgba(230, 126, 34, 0.07);
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Theorem box */
+.theorem {
+  border-left: 4px solid #2980b9;
+  background: rgba(41, 128, 185, 0.07);
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Example box */
+.example {
+  border-left: 4px solid #27ae60;
+  background: rgba(39, 174, 96, 0.07);
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Warning/note box */
+.note {
+  border-left: 4px solid #8e44ad;
+  background: rgba(142, 68, 173, 0.07);
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Historical context block */
+.history {
+  border-left: 4px solid #7f8c8d;
+  background: rgba(127, 140, 141, 0.07);
+  padding: 12px 16px;
+  margin: 12px 0;
+  border-radius: 0 6px 6px 0;
+}
+
+/* Two-column layout */
+.columns {
+  display: flex;
+  gap: 40px;
+}
+
+.columns > * {
+  flex: 1;
+}
+
+/* Compiler pipeline styling */
+.pipeline {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.pipeline-stage {
+  background: #2c3e50;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+.pipeline-arrow {
+  font-size: 1.3em;
+  color: #e74c3c;
+}
+
+/* Section title styling */
+h1 {
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 8px;
+}
+
+/* Table styling */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+th, td {
+  border: 1px solid #bdc3c7;
+  padding: 8px 12px;
+  text-align: left;
+}
+
+th {
+  background: #2c3e50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background: rgba(0, 0, 0, 0.03);
+}
+
+/* Inline keyword highlight */
+.kw {
+  color: #e74c3c;
+  font-weight: bold;
+  font-family: monospace;
+}
+
+/* Emphasis for important terms */
+.term {
+  color: #2980b9;
+  font-weight: bold;
+}
+
+/* Blockquote used for callout boxes */
+blockquote {
+  border-left: 3px solid #3498db;
+  margin: 12px 0;
+  padding: 8px 16px;
+  background: rgba(52, 152, 219, 0.05);
+}
