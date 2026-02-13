@@ -1,0 +1,9 @@
+{
+  "name": "ocaml-deep-dive",
+  "version": "1.0.0",
+  "description": "A deeply technical Slipshow presentation about OCaml",
+  "scripts": {
+    "dev": "./bin/slipshow serve presentation.md",
+    "build": "./bin/slipshow compile presentation.md -o presentation.html"
+  }
+}
